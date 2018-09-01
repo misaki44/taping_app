@@ -12,6 +12,13 @@
 		F5EA8486213A438B00C3C0E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5EA8484213A438B00C3C0E9 /* Main.storyboard */; };
 		F5EA8488213A438B00C3C0E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5EA8487213A438B00C3C0E9 /* Assets.xcassets */; };
 		F5EA848B213A438B00C3C0E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5EA8489213A438B00C3C0E9 /* LaunchScreen.storyboard */; };
+		F5EA8493213A4ABE00C3C0E9 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EA8492213A4ABE00C3C0E9 /* TopViewController.swift */; };
+		F5EA8495213A4AF300C3C0E9 /* BaseTapingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EA8494213A4AF300C3C0E9 /* BaseTapingViewController.swift */; };
+		F5EA8497213A4B1D00C3C0E9 /* SelfTapingTopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EA8496213A4B1D00C3C0E9 /* SelfTapingTopViewController.swift */; };
+		F5EA8499213A4B4600C3C0E9 /* SelfTapingOptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EA8498213A4B4600C3C0E9 /* SelfTapingOptionViewController.swift */; };
+		F5EA849B213A4B9500C3C0E9 /* SelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EA849A213A4B9500C3C0E9 /* SelectionViewController.swift */; };
+		F5EA849D213A4BA900C3C0E9 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EA849C213A4BA900C3C0E9 /* ImageViewController.swift */; };
+		F5EA849F213A4BC600C3C0E9 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EA849E213A4BC600C3C0E9 /* MovieViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		F5EA8487213A438B00C3C0E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5EA848A213A438B00C3C0E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5EA848C213A438B00C3C0E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5EA8492213A4ABE00C3C0E9 /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
+		F5EA8494213A4AF300C3C0E9 /* BaseTapingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTapingViewController.swift; sourceTree = "<group>"; };
+		F5EA8496213A4B1D00C3C0E9 /* SelfTapingTopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfTapingTopViewController.swift; sourceTree = "<group>"; };
+		F5EA8498213A4B4600C3C0E9 /* SelfTapingOptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfTapingOptionViewController.swift; sourceTree = "<group>"; };
+		F5EA849A213A4B9500C3C0E9 /* SelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionViewController.swift; sourceTree = "<group>"; };
+		F5EA849C213A4BA900C3C0E9 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		F5EA849E213A4BC600C3C0E9 /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,13 @@
 			children = (
 				F5EA8480213A438B00C3C0E9 /* AppDelegate.swift */,
 				F5EA8482213A438B00C3C0E9 /* ViewController.swift */,
+				F5EA8492213A4ABE00C3C0E9 /* TopViewController.swift */,
+				F5EA8494213A4AF300C3C0E9 /* BaseTapingViewController.swift */,
+				F5EA8496213A4B1D00C3C0E9 /* SelfTapingTopViewController.swift */,
+				F5EA8498213A4B4600C3C0E9 /* SelfTapingOptionViewController.swift */,
+				F5EA849A213A4B9500C3C0E9 /* SelectionViewController.swift */,
+				F5EA849C213A4BA900C3C0E9 /* ImageViewController.swift */,
+				F5EA849E213A4BC600C3C0E9 /* MovieViewController.swift */,
 				F5EA8484213A438B00C3C0E9 /* Main.storyboard */,
 				F5EA8487213A438B00C3C0E9 /* Assets.xcassets */,
 				F5EA8489213A438B00C3C0E9 /* LaunchScreen.storyboard */,
@@ -136,8 +157,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5EA8493213A4ABE00C3C0E9 /* TopViewController.swift in Sources */,
+				F5EA8497213A4B1D00C3C0E9 /* SelfTapingTopViewController.swift in Sources */,
+				F5EA8499213A4B4600C3C0E9 /* SelfTapingOptionViewController.swift in Sources */,
 				F5EA8483213A438B00C3C0E9 /* ViewController.swift in Sources */,
+				F5EA8495213A4AF300C3C0E9 /* BaseTapingViewController.swift in Sources */,
+				F5EA849F213A4BC600C3C0E9 /* MovieViewController.swift in Sources */,
 				F5EA8481213A438B00C3C0E9 /* AppDelegate.swift in Sources */,
+				F5EA849D213A4BA900C3C0E9 /* ImageViewController.swift in Sources */,
+				F5EA849B213A4B9500C3C0E9 /* SelectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
