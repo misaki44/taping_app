@@ -12,8 +12,8 @@ class BaseTapingViewController: ViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        view.backgroundColor = UIColor.red
+        // Do any additional setup after loadin_g the view.
     }
 
     override func didReceiveMemoryWarning() {
