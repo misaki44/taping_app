@@ -11,8 +11,7 @@ import UIKit
 class TopViewController: ViewController {
 
     @IBAction func test(_ sender: Any) {
-        let viewcontroller = BaseTapingViewController()
-        navigationController?.pushViewController(viewcontroller, animated: true)
+        navigationController?.pushViewController(BaseTapingViewController.createInstance(), animated: true)
     }
     
     

@@ -8,10 +8,27 @@
 
 import UIKit
 
-class BaseTapingViewController: ViewController {
+class BaseTapingViewController: ViewController,UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 7
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        return cell
+    }
+    
+    //storyboardのデザインを反映させたBaseTapingViewControllerを作成
+    static func createInstance() -> BaseTapingViewController {
+        let storyboard = UIStoryboard(name: "BaseTapingViewController", bundle: nil)
+        let instance = storyboard.instantiateViewController(withIdentifier: "BaseTapingViewController") as! BaseTapingViewController
+        return instance
+    }
 
+    @IBOutlet weak var tabieView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        tabieView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         view.backgroundColor = UIColor.red
         // Do any additional setup after loadin_g the view.
     }
@@ -22,14 +39,5 @@ class BaseTapingViewController: ViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

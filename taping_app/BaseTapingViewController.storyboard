@@ -10,17 +10,35 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Base Taping View Controller-->
         <scene sceneID="LaO-dF-kyc">
             <objects>
-                <viewController id="lfd-pO-JER" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BaseTapingViewController" id="lfd-pO-JER" customClass="BaseTapingViewController" customModule="taping_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LN9-C6-5xA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RYR-R1-o7b">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="lfd-pO-JER" id="b2Z-ru-obp"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="RYR-R1-o7b" firstAttribute="top" secondItem="kZb-Xa-jO5" secondAttribute="top" id="Zx2-sg-QYF"/>
+                            <constraint firstItem="RYR-R1-o7b" firstAttribute="leading" secondItem="kZb-Xa-jO5" secondAttribute="leading" id="b4j-Dd-Skc"/>
+                            <constraint firstItem="kZb-Xa-jO5" firstAttribute="bottom" secondItem="RYR-R1-o7b" secondAttribute="bottom" id="qyA-xr-InN"/>
+                            <constraint firstItem="kZb-Xa-jO5" firstAttribute="trailing" secondItem="RYR-R1-o7b" secondAttribute="trailing" id="ty5-0v-1on"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="kZb-Xa-jO5"/>
                     </view>
                     <navigationItem key="navigationItem" id="ukq-yn-wfs"/>
+                    <connections>
+                        <outlet property="tabieView" destination="RYR-R1-o7b" id="XOt-nO-91H"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RGq-Cq-JoG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
