@@ -9,12 +9,16 @@
 import UIKit
 
 class BaseTapingViewController: ViewController,UITableViewDataSource {
+    
+    let celltitles = ["アンカー","スターアップ","ホースシュー","サーキュラー","ヒールロック","フィギュアエイト","Xサポート、サポート"]
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 7
+        return celltitles.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.textLabel?.text = celltitles[indexPath.row]
         return cell
     }
     
@@ -29,7 +33,6 @@ class BaseTapingViewController: ViewController,UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         tabieView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
-        view.backgroundColor = UIColor.red
         // Do any additional setup after loadin_g the view.
     }
 

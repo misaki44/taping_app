@@ -14,6 +14,9 @@ class TopViewController: ViewController {
         navigationController?.pushViewController(BaseTapingViewController.createInstance(), animated: true)
     }
     
+    @IBAction func tapSecondButton(_ sender: Any) {
+       navigationController?.pushViewController(SelfTapingTopViewController.createInstance(), animated: true)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
